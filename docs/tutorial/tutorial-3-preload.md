@@ -46,6 +46,8 @@ From Electron 20 onwards, preload scripts are **sandboxed** by default and no lo
 to a full Node.js environment. Practically, this means that you have a polyfilled `require`
 function that only has access to a limited set of APIs.
 
+ES Modules (ESM) are not supported in a Sandboxed Renderer. Please refer to the [`ES Modules (ESM) in Electron`](https://www.electronjs.org/docs/latest/tutorial/esm#sandboxed-preload-scripts-cant-use-esm-imports) guide for more information.
+
 | Available API      | Details                                                                                                                                                                                                                                                        |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Electron modules   | Renderer process modules                                                                                                                                                                                                                                       |
